@@ -7,7 +7,7 @@ export default function Consultation() {
     const t = useTranslations('Consultation')
   return (
     <div className=" flex justify-center md:items-center gap-10 md:gap-0 py-10  bg-gray-300 md:justify-between md:py-14 md:px-20 text-gray-600 shadow-lg">
-      <h1 className=" text-2xl md:text-3xl font-semibold">{t('title')}</h1>
+      <h1 className=" text-xl sm:text-2xl md:text-3xl font-semibold sm:text-center">{t('title')}</h1>
       <div className="flex flex-col font-semibold">
         <div className="flex w-full justify-between">
           <h2 className=" text-sm md:text-xl">

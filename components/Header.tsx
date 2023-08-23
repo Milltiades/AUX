@@ -27,7 +27,7 @@ export default function Header() {
 
         <Link href="/requestCall">
           {" "}
-          <button className=" bg-blue-900 text-white font-bold rounded-xl w-40 md:w-56 md:text-xl text-sm hover:bg-blue-700 transition duration-300 ease-in-out h-11 ">
+          <button className=" bg-blue-900 text-white font-bold rounded-xl w-40 md:w-56 md:text-xl text-sm hover:bg-blue-700 transition duration-300 ease-in-out h-11 mt-2 sm:mt-0">
             {t("title")}
           </button>
         </Link>
