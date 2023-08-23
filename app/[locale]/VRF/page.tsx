@@ -1,3 +1,5 @@
+"use client"
+
 import { NavItems } from "@/constants";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
