@@ -11,7 +11,7 @@ type Inputs = {
   mobile: number;
 };
 
-export default function page() {
+export default function Page() {
   const [done, setDone] = useState(false);
 
   const t = useTranslations("Call");
