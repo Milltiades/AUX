@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   description: "AUX app",
 };
 
-export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ka" }];
-}
+// export function generateStaticParams() {
+//   return [{ locale: "en" }, { locale: "ka" }];
+// }
 
 export default function RootLayout({
   children,
