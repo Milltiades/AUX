@@ -1,10 +1,11 @@
+
+
 import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
-// import Navbar from "@/components/Navbar";
-import Lang from "@/components/Lang";
+// import Lang from "@/components/Lang";
 import { useLocale, useMessages } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";

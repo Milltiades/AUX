@@ -5,8 +5,10 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
-export default function VRFPage() {
+
+export default async function VRFPage() {
   const t = useTranslations("VRF");
+ 
 
   // Find the "VRF" category in NavItems
   const vrfCategory = NavItems.find(item => item.title === "VRF");
