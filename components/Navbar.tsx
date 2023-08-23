@@ -27,10 +27,10 @@ const Navbar = () => {
     >
       <ul className="flex space-x-4">
         {NavItems.map((item) => (
-          <Link href={item.link} className="text-white  cursor-pointer">
+          <Link href={item.link} className="text-white  cursor-pointer" key={item.id}>
             {" "}
             <li
-              key={item.id}
+              
               className="relative group bg-blue-900 hover:bg-blue-950"
               onMouseEnter={() => handleMenuClick(item)}
             >
