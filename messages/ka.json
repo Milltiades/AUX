@@ -1,0 +1,89 @@
+{
+  "Button": {
+    "title": "მოითხოვე ზარი"
+  },
+  "Navbar": {
+    "VRF": "VRF",
+    "Chiller & FCU": "ჩილერ-ფანკოილი",
+    "Multi-Split": "მულტი სპლიტი",
+    "Light Commercial": "ნახევრად სამრეწველო",
+    "Split": "სპლიტები"
+  },
+  "Footer": {
+    "contact": "კონტაქტი",
+    "address": "მისამართი",
+    "tbilisi": "თბილისი",
+    "tsereteli": "აკ.წერეთლის 140",
+    "working": "სამუშაო საათები",
+    "days": "ორშაბათი-შაბათი"
+  },
+  "Consultation": {
+    "title": "კონსულტაცია გჭირდებათ?",
+    "call": "დაგვირეკეთ",
+    "or": "ან",
+    "button": "მოითხოვე ზარი"
+  },
+
+  "Call": {
+    "title": "გაგზავნე მოთხოვნა",
+    "name": "სახელი",
+    "email": "ელ.ფოსტა",
+    "mobile": "მობილური",
+    "btn": "მოითხოვე ზარი"
+  },
+  "VRF": {
+    "Title": "VRF",
+    "Home": "მთავარი",
+    "Modular ODU": "მოდულარული გარე ბლოკი",
+    "Mini ODU": "მინი გარე ბლოკი",
+    "Cassette": "კასეტური",
+    "Duct": "არხული",
+    "Ceiling & Floor": "ჭერ-იატაკი",
+    "Wall-mounted": "კედლის",
+    "Heat Recovery Ventilator": "რეკუპერატორი",
+    "AHU - Kit": "კონტროლერი AHU"
+  },
+  "Chiller & FCU": {
+    "title": "ჩილერი და ფანკოილი",
+    "Modular Chiller": "მოდულარული ჩილერი",
+    "Cassette": "კასეტური",
+    "Duct": "არხული",
+    "Ceiling & Floor": "ჭერ-იატაკი",
+    "Wall-mounted": "კედლის"
+  },
+  "Multi-Split": {
+    "title": "მულტისპლიტ კონდიციონერი",
+    "Multi-Split ODU": "გარე ბლოკი",
+    "Cassette": "კასეტური",
+    "Duct": "არხული",
+    "Ceiling & Floor": "ჭერ-იატაკი",
+    "Wall-mounted": "კედლის"
+  },
+  "Light Commercial": {
+    "title": "ნახევრად სამრეწველო კონდიციონერი",
+    "Cassette": "კასეტური",
+    "Duct": "არხული",
+    "Ceiling & Floor": "ჭერ-იატაკი",
+    "Floor Standing": "კოლონური"
+  },
+  "Split": {
+    "title": "სპლიტ კონდიციონერი",
+    "ON/OFF": "ON/OFF",
+    "Inverter": "ინვერტერი"
+  },
+  "Navbar Items" : {
+      "Modular ODU": "მოდულარული გარე ბლოკი",
+      "Mini ODU": "მინი გარე ბლოკი",
+      "Cassette": "კასეტური",
+      "Duct": "არხული",
+      "Ceiling & Floor": "ჭერ-იატაკი",
+      "Wall-mounted": "კედლის",
+      "Heat Recovery Ventilator": "რეკუპერატორი",
+      "AHU - Kit": "კონტროლერი AHU",
+      "Modular Chiller": "მოდულარული ჩილერი",
+      "Multi-Split ODU": "გარე ბლოკი",
+      "Floor Standing": "კოლონური",
+      "ON/OFF": "ON/OFF",
+      "Inverter": "ინვერტერი"
+  }
+}

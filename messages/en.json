@@ -1,0 +1,91 @@
+{
+  "Button": {
+    "title": "Request a call"
+  },
+  "Navbar": {
+    "VRF": "VRF",
+    "Chiller & FCU": "Chiller & FCU",
+    "Multi-Split": "Multi-Split",
+    "Light Commercial": "Light Commercial",
+    "Split": "Split"
+  },
+  "Footer": {
+    "contact": "Contact",
+    "address": "Address",
+    "tbilisi": "Tbilisi",
+    "tsereteli": "140 A.Tsereteli str.",
+    "working": "Working hours",
+    "days": "Monday-Sunday"
+  },
+  "Consultation": {
+    "title": "Need consultation?",
+    "call": "Call us",
+    "or": "or",
+    "button": "Request a call"
+  },
+
+  "Call": {
+    "title": "Send Request",
+    "name": "Name",
+    "email": "Email",
+    "mobile": "Mobile",
+    "btn": "Request Call"
+  },
+  "VRF": {
+    "Title": "VRF",
+    "Home": "Home",
+    "Modular ODU": "Modular ODU",
+    "Mini ODU": "Mini ODU",
+    "Cassette": "Cassette",
+    "Duct": "Duct",
+    "Ceiling & Floor": "Ceiling & Floor",
+    "Wall-mounted": "Wall-mounted",
+    "Heat Recovery Ventilator": "Heat Recovery Ventilator",
+    "AHU - Kit": "AHU - Kit"
+  },
+  
+  "Chiller & FCU": {
+    "title": "Chiller & FCU",
+    "Modular Chiller": "Modular Chiller",
+    "Cassette": "Cassette",
+    "Duct": "Duct",
+    "Ceiling & Floor": "Ceiling& Floor",
+    "Wall-mounted": "Wall-mounted"
+  },
+  "Multi-Split": {
+    "title": "Multi-Split",
+    "Multi-Split ODU": "Multi-Split ODU",
+    "Cassette": "Cassette",
+    "Duct": "Duct",
+    "Ceiling & Floor": "Ceiling& Floor",
+    "Wall-mounted": "Wall-mounted"
+  },
+  "Light Commercial": {
+    "title": "Light Commercial",
+    "Cassette": "Cassette",
+    "Duct": "Duct",
+    "Ceiling & Floor": "Ceiling & Floor",
+    "Floor Standing": "Floor Standing"
+  },
+  "Split": {
+    "title": "Split",
+    "ON/OFF": "ON/OFF",
+    "Inverter": "Inverter"
+  },
+
+  "Navbar Items" : {
+      "Modular ODU": "Modular ODU",
+      "Mini ODU": "Mini ODU",
+      "Cassette": "Cassette",
+      "Duct": "Duct",
+      "Ceiling & Floor": "Ceiling & Floor",
+      "Wall-mounted": "Wall-mounted",
+      "Heat Recovery Ventilator": "Heat Recovery Ventilator",
+      "AHU - Kit": "AHU - Kit",
+      "Modular Chiller": "Modular Chiller",
+      "Multi-Split ODU": "Multi-Split ODU",
+      "Floor Standing": "Floor Standing",
+      "ON/OFF": "ON/OFF",
+      "Inverter": "Inverter"
+  }
+}
