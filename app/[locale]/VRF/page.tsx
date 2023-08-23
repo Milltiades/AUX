@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 
 
-export default async function VRFPage() {
+export default function VRFPage() {
   const t = useTranslations("VRF");
  
 
