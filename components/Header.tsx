@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Header() {
   const t = useTranslations("Button");
   return (
-    <div className=" bg-slate-50 md:py-14 shadow-lg lg:px-40 justify-between px-5 py-10 md:flex">
+    <div className=" bg-slate-50 md:py-14 shadow-lg lg:px-40 justify-between px-5 py-10 md:flex" >
       <Link className=" items-center flex justify-center" href="/">
         <Image 
          width={80} 
@@ -30,7 +30,7 @@ export default function Header() {
           <h1 className=" text-lg font-bold">599 99 99 99</h1>
         </div>
 
-       <Link href='/requestCall'> <button className=" bg-blue-900 text-white font-bold px-8 rounded-xl w-56 text-xl hover:bg-blue-700 transition duration-300 ease-in-out h-11">
+       <Link href='/requestCall'> <button className=" bg-blue-900 text-white font-bold px-8 rounded-xl w-56 md:text-xl text-lg hover:bg-blue-700 transition duration-300 ease-in-out h-11">
           {t("title")}
         </button>
         </Link>

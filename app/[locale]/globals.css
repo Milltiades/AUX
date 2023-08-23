@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+
 
 
 *{
-  font-family: "BPG Nino Mtavruli", sans-serif;
+  
   flex-wrap: wrap;
 }
+
+
+
 
 li {
   font-family: "ArchyEDT-Bold", sans-serif;
