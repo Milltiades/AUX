@@ -11,6 +11,7 @@ export default function Lang() {
         <Link href="/" locale="ka">
           GE
         </Link>
+        
     </div>
   )
 }
