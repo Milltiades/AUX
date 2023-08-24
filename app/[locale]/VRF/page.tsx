@@ -18,8 +18,8 @@ export default function VRFPage() {
   }
 
   return (
-    <div className=" md:px-40 pt-8 pb-16 flex flex-col px-5 min-h-custom">
-      <div className=" text-xl text-gray-500">
+    <div className="  pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 min-h-custom">
+      <div className=" text-xs sm:text-sm   text-gray-500">
         <Link href="/" passHref>
           {t("Home")}
         </Link>
@@ -39,7 +39,7 @@ export default function VRFPage() {
           </ul>
         </nav>
       </div>
-      <h1 className="product-h1">{t("Title")}</h1>
+      <h1 className="product-h1 mt-8 md:mt-16 font-bold text-sm md:text-lg">{t("Title")}</h1>
       <div>
        
       

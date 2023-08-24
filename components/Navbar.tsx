@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="hidden md:flex bg-blue-900 p-4 lg:px-40 md:px-5"
+      className="hidden md:flex bg-blue-900 p-4 px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60"
       onMouseLeave={handleNavbarMouseLeave}
     >
       <ul className="flex space-x-4">
@@ -31,7 +31,7 @@ const Navbar = () => {
             {" "}
             <li
               
-              className="relative group bg-blue-900 hover:bg-blue-950"
+              className="relative group bg-blue-900 hover:bg-blue-950 text-sm"
               onMouseEnter={() => handleMenuClick(item)}
             >
               {t(`${item.title}`)}

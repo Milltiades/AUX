@@ -18,7 +18,7 @@ export default function Home() {
  
   return (
    
-    <main className="flex flex-col min-h-custom bg-white lg:px-40 md:px-5 " >
+    <main className="flex-grow px-0 min-h-custom sm:px-5 lg:px-48 xl:px-56 2xl:px-60 py-8 md:py-12 lg:py-16 " >
      <Lang/>
       <Consultation />
       
