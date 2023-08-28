@@ -179,17 +179,21 @@ import React, { useEffect, useState } from "react";
 
 export default function VRFPage() {
 
-  const [products, setProducts] = useState([""]);
-  const initialProductID = "4f184db9-6135-42b9-b36d-d488255992b6";
-  const [selectedProductID, setSelectedProductID] = useState<any>(initialProductID);
-  const [selectedCategoryLink, setSelectedCategoryLink] = useState("");
+  const [products, setProducts] = useState([]);
+  const [productID, setProductID] = useState(
+    "4f184db9-6135-42b9-b36d-d488255992b6"
+  );
+  const [categoryLink, setCategoryLink] = useState();
+  // const initialProductID = "4f184db9-6135-42b9-b36d-d488255992b6";
+  // const [selectedProductID, setSelectedProductID] = useState<any>(initialProductID);
+  // const [selectedCategoryLink, setSelectedCategoryLink] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/products/${selectedProductID}`)
+    fetch(`http://localhost:3000/products/${productID}`)
       .then((response) => response.json())
       .then((data) => setProducts(data));
-    console.log(selectedProductID);
-  }, [selectedProductID]);
+    console.log(productID);
+  }, [productID]);
 
 
   const t = useTranslations("Chiller & FCU");
@@ -225,8 +229,8 @@ export default function VRFPage() {
                 className="li-vrf"
                 key={menuItem.option}
                 onClick={() => {
-                  setSelectedCategoryLink(menuItem.option);
-                  setSelectedProductID(menuItem.productCategoryID);
+                  setCategoryLink(menuItem.option);
+                  setProductID(menuItem.productCategoryID);
                 }}
               >
                 {t(menuItem.option)}
@@ -239,7 +243,7 @@ export default function VRFPage() {
         {t("Title")}
       </h1>
       <h2 className="mt-2 md:mt-4 text-sm md:text-lg">
-        {selectedCategoryLink && t(selectedCategoryLink)}
+        {categoryLink && t(categoryLink)}
       </h2>
       <div>
         <div className="w-full flex flex-wrap">
