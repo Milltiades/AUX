@@ -37,7 +37,9 @@ const Navbar = () => {
               {t(`${item.title}`)}
 
               {selectedItem === item && (
-                <DropdownMenu title={item.title} menu={item.menu} v={v} />
+                
+                 <DropdownMenu title={item.title} menu={item.menu} v={v}/>
+                
               )}
             </li>
           </Link>
@@ -64,7 +66,7 @@ const DropdownMenu = ({
             key={`${title}-${subIndex}`}
             className="bg-transparent hover:bg-blue-950"
           >
-            <Link href="/" className="block py-1">
+            <Link href={subItem.link} className="block py-1">
               {v(subItem.option)}
             </Link>
           </li>
