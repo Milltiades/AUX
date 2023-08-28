@@ -178,6 +178,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function VRFPage() {
+
+  const [products, setProducts] = useState([""]);
+  const initialProductID = "4f184db9-6135-42b9-b36d-d488255992b6";
+  const [selectedProductID, setSelectedProductID] = useState<any>(initialProductID);
+  const [selectedCategoryLink, setSelectedCategoryLink] = useState("");
+
+
   const t = useTranslations("Chiller & FCU");
   const p = useTranslations("Chiller & FCU - Products");
 
@@ -188,10 +195,7 @@ export default function VRFPage() {
     return null; // Return early or render a loading/error component
   }
 
-  const [products, setProducts] = useState([""]);
-  const initialProductID = "4f184db9-6135-42b9-b36d-d488255992b6";
-  const [selectedProductID, setSelectedProductID] = useState<any>(initialProductID);
-  const [selectedCategoryLink, setSelectedCategoryLink] = useState("");
+
 
   useEffect(() => {
     fetch(`http://localhost:3000/products/${selectedProductID}`)
