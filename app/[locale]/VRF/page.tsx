@@ -16,11 +16,11 @@ export default function VRFPage() {
     return null; // Return early or render a loading/error component
   }
 
-  const [products, setProducts] = useState([]);
-  const [productID, setProductID] = useState(
+  const [products, setProducts] = useState<any>([]);
+  const [productID, setProductID] = useState<any>(
     "6f4f3fa0-adb9-45f4-80b9-cc3ead6d1ac6"
   );
-  const [categoryLink, setCategoryLink] = useState();
+  const [categoryLink, setCategoryLink] = useState<any>();
 
   useEffect(() => {
     fetch(`http://localhost:3000/products/${productID}`)
