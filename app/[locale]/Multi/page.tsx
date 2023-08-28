@@ -6,15 +6,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function VRFPage() {
-  const t = useTranslations("Multi-Split");
-  const p = useTranslations("Multi-Split - Products");
 
-  // Find the "VRF" category in NavItems
-  const multiSplitCategory = NavItems.find((item) => item.title === "Multi-Split");
-
-  if (!multiSplitCategory) {
-    return null; // Return early or render a loading/error component
-  }
 
   const [products, setProducts] = useState([]);
   const [productID, setProductID] = useState(
@@ -28,6 +20,18 @@ export default function VRFPage() {
       .then((data) => setProducts(data));
     console.log(productID);
   }, [productID]);
+
+
+  const t = useTranslations("Multi-Split");
+  const p = useTranslations("Multi-Split - Products");
+
+  // Find the "VRF" category in NavItems
+  const multiSplitCategory = NavItems.find((item) => item.title === "Multi-Split");
+
+  if (!multiSplitCategory) {
+    return null; // Return early or render a loading/error component
+  }
+
 
  
 

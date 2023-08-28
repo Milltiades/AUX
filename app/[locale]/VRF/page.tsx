@@ -13,6 +13,15 @@ export default function VRFPage() {
   );
   const [categoryLink, setCategoryLink] = useState<any>();
 
+  useEffect(() => {
+    fetch(`http://localhost:3000/products/${productID}`)
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+    console.log(productID);
+    
+  }, [productID]);
+
+
   const t = useTranslations("VRF");
   const p = useTranslations("VRF - Products");
 
@@ -25,13 +34,6 @@ export default function VRFPage() {
 
 
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/products/${productID}`)
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
-    console.log(productID);
-    
-  }, [productID]);
 
   
 

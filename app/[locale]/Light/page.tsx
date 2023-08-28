@@ -6,15 +6,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function VRFPage() {
-  const t = useTranslations("Light Commercial");
-  const p = useTranslations("Light Commercial - Products");
-
-  // Find the "VRF" category in NavItems
-  const vrfCategory = NavItems.find((item) => item.title === "Light Commercial");
-
-  if (!vrfCategory) {
-    return null; // Return early or render a loading/error component
-  }
 
   const [products, setProducts] = useState([]);
   const [productID, setProductID] = useState(
@@ -28,6 +19,18 @@ export default function VRFPage() {
       .then((data) => setProducts(data));
     console.log(productID);
   }, [productID]);
+
+  const t = useTranslations("Light Commercial");
+  const p = useTranslations("Light Commercial - Products");
+
+  // Find the "VRF" category in NavItems
+  const vrfCategory = NavItems.find((item) => item.title === "Light Commercial");
+
+  if (!vrfCategory) {
+    return null; // Return early or render a loading/error component
+  }
+
+ 
 
   return (
     <div className="  pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 min-h-custom">
