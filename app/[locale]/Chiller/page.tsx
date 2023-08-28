@@ -184,6 +184,13 @@ export default function VRFPage() {
   const [selectedProductID, setSelectedProductID] = useState<any>(initialProductID);
   const [selectedCategoryLink, setSelectedCategoryLink] = useState("");
 
+  useEffect(() => {
+    fetch(`http://localhost:3000/products/${selectedProductID}`)
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+    console.log(selectedProductID);
+  }, [selectedProductID]);
+
 
   const t = useTranslations("Chiller & FCU");
   const p = useTranslations("Chiller & FCU - Products");
@@ -197,12 +204,7 @@ export default function VRFPage() {
 
 
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/products/${selectedProductID}`)
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
-    console.log(selectedProductID);
-  }, [selectedProductID]);
+  
 
   return (
     <div className="pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 min-h-custom">
