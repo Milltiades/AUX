@@ -86,7 +86,7 @@ export default function VRFPage() {
             <div
               className="  p-2 flex flex-col "
             >
-              <div className="bg-gray-500 w-full h-40 sm:h-60  rounded-lg"></div>
+              <div className="bg-gray-500 w-full h-40 sm:h-60  rounded-lg product-image"></div>
                 <h1 className="mt-2">{p(product.name)}</h1>
              
             </div>

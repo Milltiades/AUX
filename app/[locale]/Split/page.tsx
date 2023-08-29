@@ -76,7 +76,7 @@ export default function VRFPage() {
               key={product.id}
               className="  p-2 flex flex-col w-1/2 sm:w-1/3 md:w-1/4"
             >
-              <div className="bg-gray-500 w-full h-40 sm:h-60  rounded-lg"></div>
+              <div className="bg-gray-500 w-full h-40 sm:h-60  rounded-lg product-image"></div>
               <h1 className="mt-2">{p(product.name)}</h1>
             </div>
           ))}

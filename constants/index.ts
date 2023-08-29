@@ -7,42 +7,50 @@ export const NavItems = [
       {
         option: "Modular ODU",
         productCategoryID: "6f4f3fa0-adb9-45f4-80b9-cc3ead6d1ac6",
-        link: "/VRF"
+        link: "/VRF",
+     
       },
       {
         option: "Mini ODU",
         productCategoryID: "6287cc78-c860-41a3-b005-1bcd018a1002",
-        link: "/VRF"
+        link: "/VRF",
+    
       },
       {
         option: "Cassette",
         productCategoryID: "f7b4eb76-d7d9-4292-847b-ff843afc7aa3",
-        link: "/VRF"
+        link: "/VRF",
+        
       },
       {
         option: "Duct",
         productCategoryID: "987941c9-1c34-4132-840d-ada6a41c68b1",
-        link: "/VRF"
+        link: "/VRF",
+        
       },
       {
         option: "Ceiling & Floor",
         productCategoryID: "063dcd47-223d-47c9-bcc4-e6f17c089d52",
-        link: "/VRF"
+        link: "/VRF",
+        
       },
       {
         option: "Wall-mounted",
         productCategoryID: "468f7f94-279f-4162-b3e5-33965950093c",
-        link: "/VRF"
+        link: "/VRF",
+        
       },
       {
         option: "Heat Recovery Ventilator",
         productCategoryID: "54199b05-3223-44cb-b459-a4ba5b7f23f9",
-        link: "/VRF"
+        link: "/VRF",
+        
       },
       {
         option: "AHU - Kit",
         productCategoryID: "50425952-8c69-4d6f-9c79-0549b503019d",
-        link: "/VRF"
+        link: "/VRF",
+        
       },
     ],
   },

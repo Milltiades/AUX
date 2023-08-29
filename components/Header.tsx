@@ -76,10 +76,9 @@ export default function Header() {
         </div>
       )}
       {isMenu ? (
-       
         <nav>
           <ul>
-          {NavItems.map((item) => (
+            {NavItems.map((item) => (
               <Link
                 href={item.link}
                 className="text-white  cursor-pointer "
@@ -89,12 +88,17 @@ export default function Header() {
                 <li
                   className="relative group bg-blue-900 hover:bg-blue-950 text-sm z-40 w-1/2"
                   onMouseEnter={() => handleMenuClick(item)}
-                  
                 >
                   {tt(`${item.title}`)}
 
                   {selectedItem === item && (
-                    <DropdownMenu title={item.title} menu={item.menu} v={v} setIsMenu={setIsMenu} isMenu={isMenu}/>
+                    <DropdownMenu
+                      title={item.title}
+                      menu={item.menu}
+                      v={v}
+                      setIsMenu={setIsMenu}
+                      isMenu={isMenu}
+                    />
                   )}
                 </li>
               </Link>
@@ -113,8 +117,8 @@ const DropdownMenu = ({
   setIsMenu,
   v,
 }: {
-  isMenu:any,
-  setIsMenu:any,
+  isMenu: any;
+  setIsMenu: any;
   title: string;
   menu: any[];
   v: (key: string) => string;
@@ -136,3 +140,30 @@ const DropdownMenu = ({
     </ul>
   </div>
 );
+
+// const DropdownMenu = ({
+//   title,
+//   menu,
+//   v,
+// }: {
+//   title: string;
+//   menu: any[];
+//   v: (key: string) => string;
+// }) => (
+//   <div className="absolute left-0 mt-3 bg-blue-900 p-2 rounded-lg shadow-lg w-52">
+//     <ul className="space-y-1">
+//       {menu &&
+//         menu.map((subItem: any, subIndex: number) => (
+//           <li
+//             key={`${title}-${subIndex}`}
+//             className="bg-transparent hover:bg-blue-950"
+//           >
+//             <Link href={subItem.link}>
+//               <p className="block py-1">{v(subItem.option)}</p>
+//             </Link>
+//           </li>
+//         ))}
+//     </ul>
+//   </div>
+// );
+

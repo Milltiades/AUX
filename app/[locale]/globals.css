@@ -57,7 +57,12 @@ li {
 .nav-custom{
   transform: translateX(45vw);
 }
-
+.product-image{
+  background-image: url("/assets/VRF/mini/mini.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
