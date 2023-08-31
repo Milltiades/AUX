@@ -31,7 +31,7 @@
     "mobile": "Mobile",
     "btn": "Request Call"
   },
-  "VRF": {
+  "VRF1": {
     "Title": "VRF",
     "Home": "Home",
     "Modular ODU": "Modular ODU",
@@ -44,7 +44,7 @@
     "AHU - Kit": "AHU - Kit"
   },
 
-  "Chiller & FCU": {
+  "Chiller & FCU1": {
     "Title": "Chiller & FCU",
     "Home" : "Home",
     "Modular Chiller": "Modular Chiller",
@@ -53,7 +53,7 @@
     "Ceiling & Floor": "Ceiling& Floor",
     "Wall-mounted": "Wall-mounted"
   },
-  "Multi-Split": {
+  "Multi-Split1": {
     "Title": "Multi-Split",
     "Multi-Split ODU": "Multi-Split ODU",
     "Cassette": "Cassette",
@@ -61,14 +61,14 @@
     "Ceiling & Floor": "Ceiling& Floor",
     "Wall-mounted": "Wall-mounted"
   },
-  "Light Commercial": {
+  "Light Commercial1": {
     "Title": "Light Commercial",
     "Cassette": "Cassette",
     "Duct": "Duct",
     "Ceiling & Floor": "Ceiling & Floor",
     "Floor Standing": "Floor Standing"
   },
-  "Split": {
+  "Split1": {
     "Title": "Split",
     "ON/OFF": "ON/OFF",
     "Inverter": "Inverter"
@@ -97,10 +97,12 @@
     "parentID": "parentID",
     "Add Product": "Add Product",
     "Name" : "Name",
-    "Description": "Description"
+    "Description": "Description",
+    "Add Photo" : "Add Photo",
+    "All Products" :"All Products"
   },
   
-  "VRF - Products": {
+  "VRF": {
     "Modular VRF ODU": "Modular VRF ODU",
     "Heat Recovery Ventilator": "Heat Recovery Ventilator",
     "Ceiling & Floor IDU": "Ceiling & Floor IDU",
@@ -113,28 +115,28 @@
     "Medium ESP Duct IDU": "Medium ESP Duct IDU",
     "High ESP Duct IDU": "High ESP Duct IDU"
   },
-  "Chiller & FCU - Products": {
+  "Chiller%20%26%20FCU": {
     "Duct FCU": "Duct FCU",
     "Cassette FCU": "Cassette FCU",
     "Wall-Mounted FCU": "Wall-Mounted FCU",
     "Modular Chiller": "Modular Chiller",
     "Ceiling & Floor FCU": "Ceiling & Floor FCU"
   },
-  "Multi-Split - Products": {
+  "Multi-Split": {
     "Multi-Split Duct IDU": "Multi-Split Duct IDU",
     "Multi-Split ODU": "Multi-Split ODU",
     "Multi-Split Cassette IDU": "Multi-Split Cassette IDU",
     "Multi-Splitt Wall Mounted IDU": "Multi-Splitt Wall Mounted IDU",
     "Multi-Split Celing & Floor IDU": "Multi-Split Celing & Floor IDU"
   },
-  "Light Commercial - Products": {
+  "Light%20Commercial": {
     "High ESP Light Commercial Duct Conditioner": "High ESP Light Commercial Duct Conditioner",
     "Medium ESP Light Commercial Duct Conditioner": "Medium ESP Light Commercial Duct Conditioner",
     "Floor Standing Conditioner": "Floor Standing Conditioner",
     "Ceiling & Floor Light Commercial Conditioner": "Ceiling & Floor Light Commercial Conditioner",
     "Cassette Light Commercial Conditioner": "Cassette Light Commercial Conditioner"
   },
-  "Split - Products": {
+  "Split": {
     "Conditioner MBO": "Conditioner MBO",
     "Inverter Conditioner AIRFEL": "Inverter Conditioner AIRFEL"
   }

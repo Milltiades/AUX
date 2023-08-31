@@ -31,7 +31,7 @@
     "mobile": "მობილური",
     "btn": "მოითხოვე ზარი"
   },
-  "VRF": {
+  "VRF1": {
     "Title": "VRF",
     "Home": "მთავარი",
     "Modular ODU": "მოდულარული გარე ბლოკი",
@@ -43,7 +43,7 @@
     "Heat Recovery Ventilator": "რეკუპერატორი",
     "AHU - Kit": "კონტროლერი AHU"
   },
-  "Chiller & FCU": {
+  "Chiller & FCU1": {
     "Title": "ჩილერი და ფანკოილი",
     "Home" : "მთავარი",
     "Modular Chiller": "მოდულარული ჩილერი",
@@ -52,7 +52,7 @@
     "Ceiling & Floor": "ჭერ-იატაკი",
     "Wall-mounted": "კედლის"
   },
-  "Multi-Split": {
+  "Multi-Split1": {
     "Home" : "მთავარი",
     "Title": "მულტისპლიტ კონდიციონერი",
     "Multi-Split ODU": "გარე ბლოკი",
@@ -61,7 +61,7 @@
     "Ceiling & Floor": "ჭერ-იატაკი",
     "Wall-mounted": "კედლის"
   },
-  "Light Commercial": {
+  "Light Commercial1": {
     "Home" : "მთავარი",
     "Title": "ნახევრად სამრეწველო კონდიციონერი",
     "Cassette": "კასეტური",
@@ -69,7 +69,7 @@
     "Ceiling & Floor": "ჭერ-იატაკი",
     "Floor Standing": "კოლონური"
   },
-  "Split": {
+  "Split1": {
     "Home" : "მთავარი",
     "Title": "სპლიტ კონდიციონერი",
     "ON/OFF": "ON/OFF",
@@ -98,9 +98,11 @@
     "parentID": "მშობლის აიდი",
     "Add Product": "პროდუქტის დამატება",
     "Name" : "სახელი",
-    "Description": "აღწერა"
+    "Description": "აღწერა",
+    "Add Photo" : "ფოტოს დამატება",
+    "All Products" :"ყველა პროდუქტი"
   },
-  "VRF - Products": {
+  "VRF": {
     "Modular VRF ODU": "VRF მოდულარული გარე ბლოკი",
     "Heat Recovery Ventilator": "რეკუპერატორი",
     "Ceiling & Floor IDU": "ჭერ-იატაკის შიდა ბლოკი",
@@ -114,28 +116,28 @@
     "High ESP Duct IDU": "არხული შიდა ბლოკი მაღალი წნევის"
   },
 
-  "Chiller & FCU - Products": {
+  "Chiller%20%26%20FCU": {
     "Duct FCU": "არხული ფანკოილი",
     "Cassette FCU": "კასეტური ფანსკოილი",
     "Wall-Mounted FCU": "კედლის ფანკოილი",
     "Modular Chiller": "ჩილერი მოდულარული",
     "Ceiling & Floor FCU": "ჭერ-იატაკის ფანკოილი"
   },
-  "Multi-Split - Products": {
+  "Multi-Split": {
     "Multi-Split Duct IDU": "მულტი სპლიტის არხული ბლოკი",
     "Multi-Split ODU": "მულტი სპლიტის გარე ბლოკი",
     "Multi-Split Cassette IDU": "მულტი სპლიტის კასეტური ბლოკი",
     "Multi-Splitt Wall Mounted IDU": "მულტი სპლიტის კედლის ბლოკი",
     "Multi-Split Celing & Floor IDU": "მულტი სპლიტის ჭერ-იატაკის ბლოკი"
   },
-  "Light Commercial - Products": {
+  "Light%20Commercial": {
     "High ESP Light Commercial Duct Conditioner": "ნახევრად სამრეწველო არხული კონდიციონერი მაღალი წნევის",
     "Medium ESP Light Commercial Duct Conditioner": "ნახევრად სამრეწველო კომპაქტური არხული კონდიციონერი",
     "Floor Standing Conditioner": "ნახევრად სამრეწველო კოლონური კონდიციონერი",
     "Ceiling & Floor Light Commercial Conditioner": "ნახევრად სამრეწველო ჭერ-იატაკის კონდიციონერი",
     "Cassette Light Commercial Conditioner": "ნახევრად სამრეწველო კასეტური კონდიციონერი"
   },
-  "Split - Products": {
+  "Split": {
     "Conditioner MBO": "კონდიციონერი MBO",
     "Inverter Conditioner AIRFEL": "კონდიციონერი ინვერტორული AIRFEL"
   }

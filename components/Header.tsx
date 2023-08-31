@@ -1,13 +1,33 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
-import { NavItems } from "@/constants";
 
 export default function Header() {
+  const [selectedItem, setSelectedItem] = useState<any>(null);
+  const [categoryInfo, setCategoryInfo] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchProductInfo = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/product_category/list/categorys`
+        );
+        const data = await response.json();
+        setCategoryInfo(data);
+      } catch (error) {
+        console.error("Error fetching category info:", error);
+      }
+    };
+
+    fetchProductInfo();
+  }, []);
+
   const t = useTranslations("Button");
+  const n = useTranslations("Navbar");
+  const v = useTranslations("Navbar Items");
   const [isMenu, setIsMenu] = useState(false);
 
   const minHeightStyle: any = {
@@ -18,8 +38,6 @@ export default function Header() {
     width: isMenu ? "100%" : "auto",
   };
 
-  const [selectedItem, setSelectedItem] = useState<any>(null);
-
   const handleMenuClick = (item: any) => {
     setSelectedItem(item);
   };
@@ -28,8 +46,6 @@ export default function Header() {
     setSelectedItem(null);
   };
 
-  const v = useTranslations("Navbar Items");
-  const tt = useTranslations("Navbar");
   return (
     <div
       className=" min-h-100 : flex flex-col  md:flex-row bg-slate-50 md:py-14 shadow-lg px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 justify-between py-5"
@@ -62,8 +78,6 @@ export default function Header() {
               alt={"phone"}
             />
 
-            {/* <img className=" w-10 h-10 mr-4" src="./phone.svg" alt="phone" /> */}
-
             <h1 className=" text-sm md:text-lg font-bold">599 99 99 99</h1>
           </div>
 
@@ -76,33 +90,33 @@ export default function Header() {
         </div>
       )}
       {isMenu ? (
-        <nav>
-          <ul>
-            {NavItems.map((item) => (
-              <Link
-                href={item.link}
-                className="text-white  cursor-pointer "
-                key={item.id}
-              >
-                {" "}
+        <nav
+          className="  bg-blue-900 p-2 rounded-lg shadow-lg w-1/2"
+          onMouseLeave={handleNavbarMouseLeave}
+        >
+          <ul className="flex flex-col ">
+            {categoryInfo &&
+              categoryInfo.map((item: any) => (
                 <li
-                  className="relative group bg-blue-900 hover:bg-blue-950 text-sm z-40 w-1/2"
+                  key={item.productCategoryID}
+                  className="relative group bg-blue-900 hover:bg-blue-950 text-sm z-40 p-[10px] rounded-lg"
                   onMouseEnter={() => handleMenuClick(item)}
                 >
-                  {tt(`${item.title}`)}
-
+                  <Link href={`/${item.productCategoryID}`}>
+                    <p className="text-white cursor-pointer">
+                      {n(`${item.categoryName}`)}
+                    </p>
+                  </Link>
                   {selectedItem === item && (
                     <DropdownMenu
-                      title={item.title}
-                      menu={item.menu}
-                      v={v}
+                      title={item.categoryName}
+                      menu={item.children}
                       setIsMenu={setIsMenu}
-                      isMenu={isMenu}
+                      v={v}
                     />
                   )}
                 </li>
-              </Link>
-            ))}
+              ))}
           </ul>
         </nav>
       ) : null}
@@ -113,13 +127,11 @@ export default function Header() {
 const DropdownMenu = ({
   title,
   menu,
-  isMenu,
   setIsMenu,
   v,
 }: {
-  isMenu: any;
+  title: any;
   setIsMenu: any;
-  title: string;
   menu: any[];
   v: (key: string) => string;
 }) => (
@@ -129,41 +141,14 @@ const DropdownMenu = ({
         menu.map((subItem: any, subIndex: number) => (
           <li
             key={`${title}-${subIndex}`}
-            className="bg-transparent hover:bg-blue-950 z-50"
+            className="bg-transparent hover:bg-blue-950 li-navbar"
             onClick={() => setIsMenu(false)}
           >
-            <Link href={subItem.link} className="block py-1">
-              {v(subItem.option)}
+            <Link href={`/${title}/${subItem.productCategoryID}`}>
+              <p className="block py-1">{v(subItem.categoryName)}</p>
             </Link>
           </li>
         ))}
     </ul>
   </div>
 );
-
-// const DropdownMenu = ({
-//   title,
-//   menu,
-//   v,
-// }: {
-//   title: string;
-//   menu: any[];
-//   v: (key: string) => string;
-// }) => (
-//   <div className="absolute left-0 mt-3 bg-blue-900 p-2 rounded-lg shadow-lg w-52">
-//     <ul className="space-y-1">
-//       {menu &&
-//         menu.map((subItem: any, subIndex: number) => (
-//           <li
-//             key={`${title}-${subIndex}`}
-//             className="bg-transparent hover:bg-blue-950"
-//           >
-//             <Link href={subItem.link}>
-//               <p className="block py-1">{v(subItem.option)}</p>
-//             </Link>
-//           </li>
-//         ))}
-//     </ul>
-//   </div>
-// );
-

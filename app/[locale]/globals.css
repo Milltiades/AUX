@@ -13,14 +13,14 @@
 
 
 
-li {
+.li-navbar {
   font-family: "ArchyEDT-Bold", sans-serif;
   text-transform: uppercase;
   color: white;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
-  background: gray;
+  
 }
 
 /* li:hover {
@@ -42,11 +42,14 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 8px;
+  border-radius: 8px;
 }
 .li-vrf:hover{
   background: rgb(157, 157, 157);
   color: white;
   transition: all .1s ease-in;
+  
   
 }
 .product-h1{
@@ -60,7 +63,15 @@ li {
 .product-image{
   background-image: url("/assets/VRF/mini/mini.png");
   background-repeat: no-repeat;
+ 
+  background-size: contain;
+  background-position: center;
+}
+.category-image {
+  background-image: url("/assets/VRF/mini/mini.png");
+  background-repeat: no-repeat;
   background-size: cover;
+
   background-position: center;
 }
 
