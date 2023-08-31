@@ -274,7 +274,7 @@ export default function Page() {
                   onClick={() => setProductIDValue(product.productID)}
                 >
                   <div className="flex flex-row w-full justify-between items-center">
-                    <h1 className=" text-xl">{product.name}</h1>{" "}
+                    <h1 className=" text-xl w-2/3">{product.name}</h1>{" "}
                     <button
                       onClick={() => {
                         handleDeleteProduct(product.productID);
