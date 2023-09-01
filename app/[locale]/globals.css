@@ -75,5 +75,10 @@
   background-position: center;
 }
 
-
+.bg-cover{
+  background-image: url("/assets/cover/man.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 

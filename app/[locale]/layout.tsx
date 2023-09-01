@@ -1,9 +1,7 @@
-
-
 import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono  } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 
 import Footer from "@/components/Footer";
 // import Lang from "@/components/Lang";
@@ -13,9 +11,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Lang from "@/components/Lang";
-
-
-
+import Swiper from "@/components/Cover";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,14 +21,11 @@ const inter = Inter({ subsets: ["latin"] });
 //   variable: '--font-inter',
 // })
 
-
- 
 // const roboto_mono = Roboto_Mono({
 //   subsets: ['latin'],
 //   display: 'swap',
 //   variable: '--font-roboto-mono',
 // })
-
 
 export const metadata: Metadata = {
   title: "AUX",
@@ -44,16 +37,13 @@ export const metadata: Metadata = {
 // }
 
 export default function RootLayout({
-
-
   children,
   params,
 }: {
   children: any;
   params: any;
 }) {
-  
-  const messages = useMessages()
+  const messages = useMessages();
   const locale = useLocale();
 
   // Show a 404 error if the user requests an unknown locale
@@ -61,9 +51,6 @@ export default function RootLayout({
     notFound();
   }
 
-
-
-  
   return (
     <html lang={locale}>
       <body className={inter.className}>
