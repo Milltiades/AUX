@@ -1,6 +1,7 @@
 import Consultation from "@/components/Consultation";
 import Cover from "@/components/Cover";
 import Lang from "@/components/Lang";
+import OurWork from "@/components/OurWork";
 
 import { Metadata } from "next";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Cover />
 
       <Consultation />
+      <OurWork />
       <Link href="/Admin">Admin Panel</Link>
     </main>
   );

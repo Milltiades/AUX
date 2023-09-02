@@ -82,3 +82,10 @@
   background-position: center;
 }
 
+.bg-gallery{
+  background-image: url("/assets/cover/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
