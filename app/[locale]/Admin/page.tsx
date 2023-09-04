@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
+
 export default function Page() {
   const {
     handleSubmit,
@@ -23,6 +24,7 @@ export default function Page() {
   const [productIDValue, setProductIDValue] = useState<any>();
   const [allProducts, setAllProducts] = useState<any>([]);
   const [productImages, setProductImages] = useState<any>({});
+  const [editStates, setEditStates] = useState<{ [key: string]: boolean }>({});
 
   useEffect(() => {
     const FetchAllProducts = async () => {
@@ -62,8 +64,6 @@ export default function Page() {
     };
     fetchProductImages();
   }, [allProducts]);
-
-  console.log("allProducts:", allProducts);
 
   useEffect(() => {
     const fetchCategoryInfo = async () => {
@@ -168,6 +168,7 @@ export default function Page() {
       console.error("An error occurred:", error);
     }
   };
+
   const handleDeleteProduct = async (productID: string) => {
     try {
       const response = await fetch(
@@ -190,6 +191,37 @@ export default function Page() {
       console.error("An error occurred:", error);
     }
   };
+
+  const handleEditProduct = async (productID: string) => {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/products/update/${productID}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: name,
+            description: description,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        console.log("Product edited successfully");
+        alert("Product Edited");
+        window.location.reload();
+        // You might want to update your list of products here.
+      } else {
+        console.error("Failed to edit product:", response.statusText);
+        // Handle error case here.
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  };
+
   const t = useTranslations("Admin");
   const v = useTranslations("Navbar");
   const p = useTranslations("Navbar Items");
@@ -275,18 +307,59 @@ export default function Page() {
                 >
                   <div className="flex flex-row w-full justify-between items-center">
                     <h1 className=" text-xl w-2/3">{product.name}</h1>{" "}
-                    <button
-                      onClick={() => {
-                        handleDeleteProduct(product.productID);
-                      }}
-                    >
-                      <Image
-                        src={"/delete.svg"}
-                        alt={"delete"}
-                        width={32}
-                        height={32}
-                      />
-                    </button>
+                    {editStates[product.productID] ? (
+                      <form action="" className="flex flex-col gap-2">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          className="h-8 bg-transparent border-b-2 border-blue-900 focus:border-blue-900 text-blue-900 hover:border-blue-900 text-sm sm:text-lg md:text-xl"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                        />
+                        <input
+                          type="text"
+                          placeholder="Description"
+                          className="h-8 bg-transparent border-b-2 border-blue-900 focus:border-blue-900 text-blue-900 hover:border-blue-900 text-sm sm:text-lg md:text-xl"
+                          value={description}
+                          onChange={(e) => setDescription(e.target.value)}
+                        />
+                        <input
+                          type="submit"
+                          value="edit"
+                          className="bg-blue-900 text-white rounded-xl p-2 w-32  md:w-40 hover:bg-blue-700 transition duration-300 ease-in-out text-sm sm:text-lg mb-2 cursor-pointer"
+                          onClick={() => handleEditProduct(product.productID)}
+                        />
+                      </form>
+                    ) : null}
+                    <div className="flex flex-row gap-3">
+                      <button
+                        onClick={() =>
+                          setEditStates((prevState) => ({
+                            ...prevState,
+                            [product.productID]: !prevState[product.productID],
+                          }))
+                        }
+                      >
+                        <Image
+                          src={"/edit.svg"}
+                          alt={"edit"}
+                          width={32}
+                          height={32}
+                        />
+                      </button>
+                      <button
+                        onClick={() => {
+                          handleDeleteProduct(product.productID);
+                        }}
+                      >
+                        <Image
+                          src={"/delete.svg"}
+                          alt={"delete"}
+                          width={32}
+                          height={32}
+                        />
+                      </button>
+                    </div>
                   </div>
                   <form
                     onSubmit={onPhotoSubmit}
