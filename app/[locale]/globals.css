@@ -75,12 +75,27 @@
   background-position: center;
 }
 
-.bg-cover{
-  background-image: url("/assets/cover/man.png");
+.bg-cover {
+  background-image: url("/assets/cover/N1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
+  animation: changeBackground 10s infinite;
 }
+
+@keyframes changeBackground {
+  0% {
+      background-image: url('/assets/cover/N1.png');
+  }
+  50% {
+      background-image: url('/assets/cover/N2.jpg');
+  }
+  100% {
+      background-image: url('/assets/cover/N1.png');
+  }
+}
+
+
 
 .bg-gallery{
   background-image: url("/assets/cover/banner.png");
