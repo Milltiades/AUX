@@ -1,7 +1,11 @@
-import React from 'react'
+"use client";
+import SliderComponent from "@/components/SliderComponent.tsx";
+import React from "react";
 
-export default function GalleryPage() {
+export default function page() {
   return (
-    <div>Gallery Page</div>
-  )
+    <div>
+      <SliderComponent />
+    </div>
+  );
 }

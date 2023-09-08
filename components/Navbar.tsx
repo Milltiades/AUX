@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 const Navbar = () => {
   const t = useTranslations("Navbar");
   const v = useTranslations("Navbar Items");
+  const a = useTranslations("About");
 
   const [selectedItem, setSelectedItem] = useState(null);
   const [categoryInfo, setCategoryInfo] = useState<any>(null);
@@ -64,6 +65,11 @@ const Navbar = () => {
               )}
             </li>
           ))}
+        <li className="relative group bg-blue-900 hover:bg-blue-950 text-sm li-navbar">
+          <Link href={"/about"}>
+            <p>{a("title")}</p>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

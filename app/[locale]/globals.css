@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-*{
-  
+* {
   flex-wrap: wrap;
 }
-
-
-
 
 .li-navbar {
   font-family: "ArchyEDT-Bold", sans-serif;
@@ -20,13 +13,11 @@
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
-  
 }
 
 /* li:hover {
   background: gray;
 } */
-
 
 .min-h-custom {
   min-height: calc(100vh - 392px);
@@ -35,7 +26,7 @@
 .li-vrf {
   font-size: 8px;
   color: #676565;
-  background-color: #E6E7EB;
+  background-color: #e6e7eb;
   font-weight: bold;
   text-align: center;
   display: flex;
@@ -45,25 +36,21 @@
   padding: 8px;
   border-radius: 8px;
 }
-.li-vrf:hover{
+.li-vrf:hover {
   background: rgb(157, 157, 157);
   color: white;
-  transition: all .1s ease-in;
-  
-  
+  transition: all 0.1s ease-in;
 }
-.product-h1{
-  
-
+.product-h1 {
   color: rgb(90, 90, 90);
 }
-.nav-custom{
+.nav-custom {
   transform: translateX(45vw);
 }
-.product-image{
+.product-image {
   background-image: url("/assets/VRF/mini/mini.png");
   background-repeat: no-repeat;
- 
+
   background-size: contain;
   background-position: center;
 }
@@ -85,22 +72,43 @@
 
 @keyframes changeBackground {
   0% {
-      background-image: url('/assets/cover/N1.png');
+    background-image: url("/assets/cover/N1.png");
   }
   50% {
-      background-image: url('/assets/cover/N2.jpg');
+    background-image: url("/assets/cover/N2.jpg");
   }
   100% {
-      background-image: url('/assets/cover/N1.png');
+    background-image: url("/assets/cover/N1.png");
   }
 }
 
-
-
-.bg-gallery{
+.bg-gallery {
   background-image: url("/assets/cover/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+/* 
+.swiper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+.swiper-wrapper {
+  width: 100%; 
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+} */

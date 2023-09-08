@@ -28,6 +28,7 @@ export default function Header() {
   const t = useTranslations("Button");
   const n = useTranslations("Navbar");
   const v = useTranslations("Navbar Items");
+  const a = useTranslations("About");
   const [isMenu, setIsMenu] = useState(false);
 
   const minHeightStyle: any = {
@@ -117,6 +118,11 @@ export default function Header() {
                   )}
                 </li>
               ))}
+            <li className="bg-transparent hover:bg-blue-950 li-navbar">
+              <Link href={"/about"} onClick={() => setIsMenu(false)}>
+                <p>{a("title")}</p>
+              </Link>
+            </li>
           </ul>
         </nav>
       ) : null}
