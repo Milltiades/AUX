@@ -5,6 +5,9 @@
 * {
   flex-wrap: wrap;
 }
+body {
+  overflow-x: hidden;
+}
 
 .li-navbar {
   font-family: "ArchyEDT-Bold", sans-serif;
