@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   const t = useTranslations("About");
   return (
     <div className="pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 min-h-custom">
