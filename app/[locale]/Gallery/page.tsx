@@ -12,8 +12,10 @@ import "lightgallery/css/lg-thumbnail.css";
 
 // import plugins if you need
 import lgThumbnail from "lightgallery/plugins/thumbnail";
+import { useTranslations } from "next-intl";
 
 export default function page() {
+  const t = useTranslations("Gallery");
   const projects = [
     {
       id: 1,
@@ -28,7 +30,7 @@ export default function page() {
   ];
   return (
     <div className="pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 min-h-custom">
-      <h1>work done </h1>
+      <h1 className="mb-2">{t("Works")} </h1>
 
       <div className="flex flex-row w-full gap-5">
         <div>
@@ -59,7 +61,7 @@ export default function page() {
           </LightGallery>
         </div>
 
-        <div>
+        {/* <div>
           <LightGallery speed={500} plugins={[lgThumbnail]}>
             <Link href="/assets/cover/man.png" className="w-1/2">
               <Image
@@ -84,7 +86,7 @@ export default function page() {
               />
             </Link>
           </LightGallery>
-        </div>
+        </div> */}
       </div>
     </div>
   );
