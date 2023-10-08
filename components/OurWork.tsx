@@ -12,7 +12,7 @@ export default function OurWork() {
 
       <Link href="/Gallery">
         {" "}
-        <button className=" bg-blue-900 text-white font-bold rounded-xl w-40 md:w-56 md:text-xl text-sm hover:bg-blue-700 transition duration-300 ease-in-out h-11">
+        <button className=" bg-blue-900 text-white font-bold rounded-xl w-40 md:w-56 md:text-lg text-sm hover:bg-blue-700 transition duration-300 ease-in-out h-11 mt-4 sm:mt-0 flex flex-row justify-center items-center">
           {t("See Works")}
         </button>
       </Link>
