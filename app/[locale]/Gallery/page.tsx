@@ -14,7 +14,7 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import { useTranslations } from "next-intl";
 
-export default function page() {
+export default function Page() {
   const t = useTranslations("Gallery");
   const projects = [
     {
