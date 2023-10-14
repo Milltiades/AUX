@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="hidden md:flex bg-blue-900 p-4 px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 h-[65px]"
+      className="hidden md:flex bg-blue-900 p-4 px-5 sm:px-5 sm:pr-0 lg:pr-0 lg:px-48 xl:px-56 2xl:px-60 h-[65px]"
       onMouseLeave={handleNavbarMouseLeave}
     >
       <ul className="flex space-x-4">
