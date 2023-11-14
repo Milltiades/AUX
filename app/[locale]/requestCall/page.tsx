@@ -25,8 +25,6 @@ export default function Page() {
   } = useForm<Inputs>();
 
   const onSubmit = (e: any) => {
-    // e.preventDefault();
-
     emailjs
       .sendForm(
         "service_j314zp1",

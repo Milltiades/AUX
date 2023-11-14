@@ -118,7 +118,7 @@ export default function Header() {
                   )}
                 </li>
               ))}
-            <li className="bg-transparent hover:bg-blue-950 li-navbar">
+            <li className="bg-transparent hover:bg-blue-950 li-navbar text-sm ">
               <Link href={"/about"} onClick={() => setIsMenu(false)}>
                 <p>{a("title")}</p>
               </Link>
@@ -141,7 +141,7 @@ const DropdownMenu = ({
   menu: any[];
   v: (key: string) => string;
 }) => (
-  <div className="absolute top-0 mt-3 bg-blue-900 p-2 rounded-lg shadow-lg nav-custom w-44">
+  <div className="absolute  top-0 mt-3 bg-blue-900 p-2 rounded-lg shadow-lg nav-custom nav-mobile">
     <ul className="space-y-1">
       {menu &&
         menu.map((subItem: any, subIndex: number) => (

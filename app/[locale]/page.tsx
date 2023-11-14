@@ -20,8 +20,6 @@ export default function Home() {
 
       <Consultation />
       <OurWork />
-
-      {/* <Link href="/AdminBacho">Admin Panel</Link> */}
     </main>
   );
 }

@@ -1,45 +1,27 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono, Roboto } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 
 import Footer from "@/components/Footer";
-// import Lang from "@/components/Lang";
+
 import { useLocale, useMessages } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
-import Lang from "@/components/Lang";
-import Swiper from "@/components/Cover";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
-
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-inter',
-// })
-
-// const roboto_mono = Roboto_Mono({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-roboto-mono',
-// })
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "AUX",
   description: "AUX app",
 };
-
-// export function generateStaticParams() {
-//   return [{ locale: "en" }, { locale: "ka" }];
-// }
 
 export default function RootLayout({
   children,
@@ -58,7 +40,13 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={roboto.className}>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css"
+        />
+      </Head>
+      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <Navbar />

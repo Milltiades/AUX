@@ -1,3 +1,4 @@
+@import url("//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,8 @@
 
 * {
   flex-wrap: wrap;
+  font-family: "ALK Sanet", sans-serif;
+  
 }
 
 
@@ -18,9 +21,7 @@
   cursor: pointer;
 }
 
-/* li:hover {
-  background: gray;
-} */
+
 
 .min-h-custom {
   min-height: calc(100vh - 392px);
@@ -30,7 +31,7 @@
   font-size: 8px;
   color: #676565;
   background-color: #e6e7eb;
-  font-weight: bold;
+
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -117,7 +118,7 @@
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,11 +130,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* .mySwiper2 {
 
-  height: 100%;
-  width: 100%;
-} */
 
 .mySwiper {
   height: 20%;
@@ -162,7 +159,7 @@
   background-color: #1E3A8A;
   color: #ffffff;
   font-size: 1em;
-  font-weight: 600;
+  
   position: relative;
   outline: none;
   border-radius: 12px;
@@ -171,5 +168,9 @@
   align-items: center;
   cursor: pointer;
   height: auto;
-  /* width: 160px; */
+  
+}
+
+.nav-mobile{
+  width: calc(100% - 2px);
 }
