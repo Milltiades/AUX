@@ -73,6 +73,40 @@ export default function Page() {
                 {p("btn")}
               </button>
             </Link>
+            <div>
+              <ul className="flex">
+                <li>
+                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
+                    1
+                  </button>
+                </li>
+                <li>
+                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
+                    2
+                  </button>
+                </li>
+                <li>
+                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
+                    3
+                  </button>
+                </li>
+                <li>
+                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
+                    4
+                  </button>
+                </li>
+                <li>
+                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
+                    5
+                  </button>
+                </li>
+                <li>
+                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
+                    6
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       ) : (

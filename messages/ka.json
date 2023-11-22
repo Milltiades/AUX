@@ -62,7 +62,8 @@
     "Cassette": "კასეტური",
     "Duct": "არხული",
     "Ceiling & Floor": "ჭერ-იატაკი",
-    "Wall-mounted": "კედლის"
+    "Wall-mounted": "კედლის",
+    "Console": "კონსოლი"
   },
   "Light Commercial1": {
     "Home" : "მთავარი",
@@ -91,7 +92,8 @@
     "Multi-Split ODU": "გარე ბლოკი",
     "Floor Standing": "კოლონური",
     "ON/OFF": "ON/OFF",
-    "Inverter": "ინვერტერი"
+    "Inverter": "ინვერტერი",
+    "Console" : "კონსოლი"
   },
   "Admin": {
     "title": "კატეგორიების დამატება",
@@ -138,7 +140,10 @@
     "Medium ESP Light Commercial Duct Conditioner": "ნახევრად სამრეწველო კომპაქტური არხული კონდიციონერი ინვენტორული",
     "Floor Standing Conditioner": "ნახევრად სამრეწველო კოლონური კონდიციონერი",
     "Ceiling & Floor Light Commercial Conditioner": "ნახევრად სამრეწველო ჭერ-იატაკის კონდიციონერი ინვენტორული",
-    "Cassette Light Commercial Conditioner": "ნახევრად სამრეწველო კასეტური კონდიციონერი ინვენტორული"
+    "Cassette Light Commercial Conditioner": "ნახევრად სამრეწველო კასეტური კონდიციონერი ინვენტორული",
+    "CASSETTE LIGHT COMMERCIAL CONDITIONER ON/OF" : "ნახევრად სამრეწველო კასეტური კონდიციონერი არაინვენტორული",
+    "Medium ESP Light Commercial Duct Conditioner On/Off" : "ნახევრად სამრეწველო კასეტური კონდიციონერი არაინვენტორული",
+    "Ceiling & Floor Light Commercial Conditioner On/Off" : "ნახევრად სამრეწველო ჭერ-იატაკის კონდიციონერი არაინვენტორული"
   },
 
   "Gallery": {

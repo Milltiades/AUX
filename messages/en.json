@@ -62,7 +62,8 @@
     "Cassette": "Cassette",
     "Duct": "Duct",
     "Ceiling & Floor": "Ceiling& Floor",
-    "Wall-mounted": "Wall-mounted"
+    "Wall-mounted": "Wall-mounted",
+    "Console": "Console"
   },
   "Light Commercial1": {
     "Title": "Light Commercial",
@@ -90,7 +91,8 @@
     "Multi-Split ODU": "Multi-Split ODU",
     "Floor Standing": "Floor Standing",
     "ON/OFF": "ON/OFF",
-    "Inverter": "Inverter"
+    "Inverter": "Inverter",
+    "Console" : "Console"
   },
   "Admin": {
     "title": "Add Categories",
@@ -134,10 +136,13 @@
   },
   "Light%20Commercial": {
     "High ESP Light Commercial Duct Conditioner": "High ESP Light Commercial Duct Conditioner",
-    "Medium ESP Light Commercial Duct Conditioner": "Medium ESP Light Commercial Duct Conditioner",
+    "Medium ESP Light Commercial Duct Conditioner": "Medium ESP Light Commercial Duct Conditioner Inverter",
     "Floor Standing Conditioner": "Floor Standing Conditioner",
-    "Ceiling & Floor Light Commercial Conditioner": "Ceiling & Floor Light Commercial Conditioner",
-    "Cassette Light Commercial Conditioner": "Cassette Light Commercial Conditioner"
+    "Ceiling & Floor Light Commercial Conditioner": "Ceiling & Floor Light Commercial Conditioner Inventer",
+    "Cassette Light Commercial Conditioner": "Cassette Light Commercial Conditioner Inverter",
+    "CASSETTE LIGHT COMMERCIAL CONDITIONER ON/OF": "CASSETTE LIGHT COMMERCIAL CONDITIONER ON/OF",
+    "Medium ESP Light Commercial Duct Conditioner On/Off" : "Medium ESP Light Commercial Duct Conditioner On/Off",
+    "Ceiling & Floor Light Commercial Conditioner On/Off" : "Ceiling & Floor Light Commercial Conditioner On/Off"
   },
  
   "Gallery": {
