@@ -12,7 +12,7 @@ export default function Consultation() {
       <div className="flex flex-col font-semibold">
         <div className="flex w-full justify-between">
           <h2 className=" text-sm md:text-xl">{t("call")}</h2>
-          <h2 className=" text-sm md:text-xl">599 99 99 99</h2>
+          <h2 className=" text-sm md:text-xl">579 33 96 48</h2>
         </div>
         <div className="flex mt-4 items-center ">
           <h2 className=" text-sm md:text-xl mr-4">{t("or")}</h2>
