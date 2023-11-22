@@ -6,16 +6,19 @@
     "VRF": "VRF",
     "Chiller & FCU": "ჩილერ-ფანკოილი",
     "Multi-Split": "მულტი სპლიტი",
-    "Light Commercial": "ნახევრად სამრეწველო",
-    "Split": "სპლიტები"
+    "Light Commercial": "ნახევრად სამრეწველო"
+    
   },
   "Footer": {
     "contact": "კონტაქტი",
     "address": "მისამართი",
     "tbilisi": "თბილისი",
-    "tsereteli": "აკ.წერეთლის 140",
+    "batumi" : "Batumi",
+    "gogidze": "შ.გოგიძის 6",
+    "griboedovi":"ალ. გრიბოედოვის 67",
     "working": "სამუშაო საათები",
-    "days": "ორშაბათი-შაბათი"
+    "days1": "ორშაბათი-შაბათი",
+    "days2": "შაბათი"
   },
   "Consultation": {
     "title": "კონსულტაცია გჭირდებათ?",
@@ -106,7 +109,7 @@
     "Modular VRF ODU": "VRF მოდულარული გარე ბლოკი",
     "Heat Recovery Ventilator": "რეკუპერატორი",
     "Ceiling & Floor IDU": "ჭერ-იატაკის შიდა ბლოკი",
-    "Mini VRF ODU": "VRF მინი გარე ბლოკი 1",
+    "Mini VRF ODU": "VRF მინი გარე ბლოკი",
     "AHU-KIT": "კონტროლერი AHU-KIT",
     "Wall-Mounted IDU": "კედლის შიდა ბლოკი",
     "Compact Cassette IDU": "კომპაქტური კასეტური შიდა ბლოკი",
@@ -118,7 +121,7 @@
 
   "Chiller%20%26%20FCU": {
     "Duct FCU": "არხული ფანკოილი",
-    "Cassette FCU": "კასეტური ფანსკოილი",
+    "Cassette FCU": "კასეტური ფანკოილი",
     "Wall-Mounted FCU": "კედლის ფანკოილი",
     "Modular Chiller": "ჩილერი მოდულარული",
     "Ceiling & Floor FCU": "ჭერ-იატაკის ფანკოილი"
@@ -132,15 +135,12 @@
   },
   "Light%20Commercial": {
     "High ESP Light Commercial Duct Conditioner": "ნახევრად სამრეწველო არხული კონდიციონერი მაღალი წნევის",
-    "Medium ESP Light Commercial Duct Conditioner": "ნახევრად სამრეწველო კომპაქტური არხული კონდიციონერი",
+    "Medium ESP Light Commercial Duct Conditioner": "ნახევრად სამრეწველო კომპაქტური არხული კონდიციონერი ინვენტორული",
     "Floor Standing Conditioner": "ნახევრად სამრეწველო კოლონური კონდიციონერი",
-    "Ceiling & Floor Light Commercial Conditioner": "ნახევრად სამრეწველო ჭერ-იატაკის კონდიციონერი",
-    "Cassette Light Commercial Conditioner": "ნახევრად სამრეწველო კასეტური კონდიციონერი"
+    "Ceiling & Floor Light Commercial Conditioner": "ნახევრად სამრეწველო ჭერ-იატაკის კონდიციონერი ინვენტორული",
+    "Cassette Light Commercial Conditioner": "ნახევრად სამრეწველო კასეტური კონდიციონერი ინვენტორული"
   },
-  "Split": {
-    "Conditioner MBO": "კონდიციონერი MBO",
-    "Inverter Conditioner AIRFEL": "კონდიციონერი ინვერტორული AIRFEL"
-  },
+
   "Gallery": {
     "Our Work" : "ჩვენი ნამუშევრები",
     "See Works" : "იხილეთ სამუშაოები",

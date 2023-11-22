@@ -79,7 +79,7 @@ export default function Header() {
               alt={"phone"}
             />
 
-            <h1 className=" text-sm md:text-lg font-bold">599 99 99 99</h1>
+            <h1 className=" text-sm md:text-lg font-bold">579 33 96 48</h1>
           </div>
 
           <Link href="/requestCall">

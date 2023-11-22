@@ -11,8 +11,8 @@ export default function Footer() {
             {t("contact")}
           </h1>
           <h1 className=" font-semibold text-xs md:text-sm text-gray-600">
-            599 99 99 99 <br />
-            auxtesttest@aux.ge
+            579 33 96 48 <br />
+            sales@auxcac.ge
           </h1>
         </div>
         <div className=" flex flex-col gap-5">
@@ -20,7 +20,10 @@ export default function Footer() {
             {t("address")}
           </h1>
           <h1 className=" font-semibold text-xs md:text-sm text-gray-600">
-            {t("tbilisi")} <br /> {t("tsereteli")}
+            {t("tbilisi")} <br /> {t("gogidze")}
+          </h1>
+          <h1 className=" font-semibold text-xs md:text-sm text-gray-600">
+            {t("batumi")} <br /> {t("griboedovi")}
           </h1>
         </div>
         <div className=" flex flex-col gap-5">
@@ -28,8 +31,12 @@ export default function Footer() {
             {t("working")}
           </h1>
           <h1 className=" font-semibold text-xs md:text-sm text-gray-600">
-            {t("days")} <br />
+            {t("days1")} <br />
             10:00-18:00
+          </h1>
+          <h1 className=" font-semibold text-xs md:text-sm text-gray-600">
+            {t("days2")} <br />
+            10:00-14:00
           </h1>
         </div>
       </div>

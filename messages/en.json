@@ -6,16 +6,19 @@
     "VRF": "VRF",
     "Chiller & FCU": "CHILLER & FCU",
     "Multi-Split": "MULTI-SPLIT",
-    "Light Commercial": "LIGHT COMMERCIAL",
-    "Split": "SPLIT"
+    "Light Commercial": "LIGHT COMMERCIAL"
+    
   },
   "Footer": {
     "contact": "Contact",
     "address": "Address",
     "tbilisi": "Tbilisi",
-    "tsereteli": "140 A.Tsereteli str.",
+    "batumi" : "Batumi",
+    "gogidze": "6 Sh.Gogidze str.",
+    "griboedovi" : "67 Al.Griboedovi str.",
     "working": "Working hours",
-    "days": "Monday-Sunday"
+    "days1": "Monday-Friday",
+    "days2": "Sunday"
   },
   "Consultation": {
     "title": "Need consultation?",
@@ -136,10 +139,7 @@
     "Ceiling & Floor Light Commercial Conditioner": "Ceiling & Floor Light Commercial Conditioner",
     "Cassette Light Commercial Conditioner": "Cassette Light Commercial Conditioner"
   },
-  "Split": {
-    "Conditioner MBO": "Conditioner MBO",
-    "Inverter Conditioner AIRFEL": "Inverter Conditioner AIRFEL"
-  },
+ 
   "Gallery": {
     "Our Work" : "Our Work",
     "See Works" : "See Works",
