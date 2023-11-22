@@ -52,9 +52,10 @@ export default function Header() {
       className=" min-h-100 : flex flex-col  md:flex-row bg-slate-50 md:py-14 shadow-lg px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 justify-between py-5"
       style={minHeightStyle}
     >
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between items-center">
         <Link className=" items-center flex justify-center" href="/">
-          <Image width={80} height={30} src="/logo.svg" alt={"logo"} />
+          {/* <Image width={80} height={30} src="/logo.svg" alt={"logo"} /> */}
+          <Image width={90} height={30} src="/Aux-logo.svg" alt={"logo"} />
         </Link>
         {!isMenu ? (
           <MenuOutlined
