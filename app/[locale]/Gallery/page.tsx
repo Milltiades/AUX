@@ -32,7 +32,7 @@ export default function Page() {
                 height={150}
               />
             </Link>
-            <Link href="/assets/mindeli/mind1[1376].jpg" className=" hidden">
+            {/* <Link href="/assets/mindeli/mind1[1376].jpg" className=" hidden">
               <img alt="Mindeli1" src="/assets/mindeli/mind1[1376].jpg" />
             </Link>
             <Link href="/assets/mindeli/mind2[1372].jpg" className=" hidden">
@@ -46,36 +46,50 @@ export default function Page() {
             </Link>
             <Link href="/assets/mindeli/mind5[1374].jpg" className=" hidden">
               <img alt="Mindeli5" src="/assets/mindeli/mind5[1374].jpg" />
-            </Link>
-          </LightGallery>
-        </div>
+            </Link> */}
 
-        {/* <div>
-          <LightGallery speed={500} plugins={[lgThumbnail]}>
-            <Link href="/assets/cover/man.png" className="w-1/2">
+            <Link href="/assets/mindeli/mind1[1376].jpg" className=" hidden">
               <Image
-                alt="img1"
-                src="/assets/cover/man.png"
+                alt="Mindeli1"
+                src="/assets/mindeli/mind1[1376].jpg"
                 width={150}
                 height={150}
               />
             </Link>
-            <Link href="/assets/cover/N1.jpg" className=" hidden w-full">
-              <img
-                alt="Mindeli"
-                src="/assets/cover/N1.jpg"
-                className=" w-full"
+            <Link href="/assets/mindeli/mind2[1372].jpg" className=" hidden">
+              <Image
+                alt="Mindeli2"
+                src="/assets/mindeli/mind2[1372].jpg"
+                width={150}
+                height={150}
               />
             </Link>
-            <Link href="/assets/cover/N2.jpg" className=" hidden w-full">
-              <img
-                alt="Mindeli"
-                src="/assets/cover/N2.jpg"
-                className=" w-full"
+            <Link href="/assets/mindeli/mind3[1373].jpg" className=" hidden">
+              <Image
+                alt="Mindeli3"
+                src="/assets/mindeli/mind3[1373].jpg"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href="/assets/mindeli/mind4[1375].jpg" className=" hidden">
+              <Image
+                alt="Mindeli4"
+                src="/assets/mindeli/mind4[1375].jpg"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href="/assets/mindeli/mind5[1374].jpg" className=" hidden">
+              <Image
+                alt="Mindeli5"
+                src="/assets/mindeli/mind5[1374].jpg"
+                width={150}
+                height={150}
               />
             </Link>
           </LightGallery>
-        </div> */}
+        </div>
       </div>
     </div>
   );
