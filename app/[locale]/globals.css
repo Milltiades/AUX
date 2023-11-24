@@ -71,7 +71,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  animation: changeBackground 15s infinite;
+  animation: changeBackground 35s infinite;
 }
 
 @keyframes changeBackground {
