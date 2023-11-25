@@ -58,6 +58,7 @@
   background-size: contain;
   background-position: center;
 }
+
 .category-image {
   background-image: url("/assets/VRF/mini/mini.png");
   background-repeat: no-repeat;
@@ -71,7 +72,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  animation: changeBackground 35s infinite;
+  animation: changeBackground 15s infinite;
 }
 
 @keyframes changeBackground {

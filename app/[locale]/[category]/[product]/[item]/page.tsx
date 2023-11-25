@@ -10,6 +10,8 @@ export default function Page() {
 
   const [productInfo, setProductInfo] = useState<any>();
   const [productImage, setProductImage] = useState<string | null>(null);
+  const [optionImge, setOptionImage] = useState<string | null>(null);
+  const [clickedImage, setClickedImage] = useState<any>();
 
   useEffect(() => {
     const fetchProductImage = async () => {
@@ -24,6 +26,7 @@ export default function Page() {
         console.error("Error Fetching Image", error);
       }
     };
+
     if (productInfo) {
       fetchProductImage();
     }
@@ -45,15 +48,49 @@ export default function Page() {
     fetchProductInfo();
   }, [params.item]);
 
-  console.log("params", params);
-  console.log("oneProduct:", productInfo);
-  console.log("productImage", productImage);
+  const handleClick = async (index: any) => {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/products/files/${productInfo?.file[index] || ""}`
+      );
+      const blob = await response.blob();
+      const objectUrl = URL.createObjectURL(blob);
+
+      setOptionImage(objectUrl); // Assuming you want to update the state with the fetched option image
+      console.log("option image: ", optionImge);
+    } catch (error) {
+      console.error("Error fetching product description image info:", error);
+    }
+  };
+
+  useEffect(() => {
+    const fetchOptionImage = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/products/files/${productInfo?.file[0] || ""}`
+        );
+        const blob = await response.blob();
+        const objectUrl = URL.createObjectURL(blob);
+
+        setOptionImage(objectUrl); // Assuming you want to update the state with the fetched option image
+        console.log("option image: ", optionImge);
+      } catch (error) {
+        console.error("Error fetching product description image info:", error);
+      }
+    };
+    fetchOptionImage();
+  }, [productInfo]);
+
+  // console.log("params", params);
+  // console.log("oneProduct:", productInfo);
+  // console.log("productImage", productImage);
+  // console.log("test", productInfo.file);
 
   const t = useTranslations<any>(params.category);
   const p = useTranslations<any>("Call");
 
   return (
-    <div className="pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 min-h-custom">
+    <div className="pt-8 pb-16 flex flex-col px-5 sm:px-5 lg:px-48 xl:px-56 2xl:px-60 ">
       {productInfo ? (
         <div className="flex flex-col sm:flex-row sm:items-start sm:mt-20">
           <div
@@ -62,7 +99,7 @@ export default function Page() {
           ></div>
           <div className="p-0 sm:p-5 sm:px-10 mt-5 sm:mt-0 w-auto sm:w-1/2 sm:h-96 flex flex-col gap-5 items-center sm:items-end">
             <div className="w-auto">
-              <h1 className="mt-2 text-lg sm:text-xl  ">
+              <h1 className="mt-2 text-lg sm:text-xl font-bold">
                 {t(productInfo.name)}
               </h1>
               <p className="">{t(productInfo.description)}</p>
@@ -73,45 +110,34 @@ export default function Page() {
                 {p("btn")}
               </button>
             </Link>
-            <div>
-              <ul className="flex">
-                <li>
-                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
-                    1
-                  </button>
-                </li>
-                <li>
-                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
-                    2
-                  </button>
-                </li>
-                <li>
-                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
-                    3
-                  </button>
-                </li>
-                <li>
-                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
-                    4
-                  </button>
-                </li>
-                <li>
-                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
-                    5
-                  </button>
-                </li>
-                <li>
-                  <button className=" w-10 h-10 bg-blue-900 m-2 rounded-lg text-white">
-                    6
-                  </button>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       ) : (
         <p>Loading...</p>
       )}
+      <div className="flex sm:w-full sm:flex-col mt-20 md:flex-row">
+        <div className="sm:w-full md:w-1/2">
+          <h1 className=" text-2xl font-bold">Product options</h1>
+          <div className="mt-5 ">
+            <ul className="flex">
+              {productInfo.file.map((item: any, index: any) => (
+                <li key={item}>
+                  <button
+                    onClick={() => handleClick(index)}
+                    className=" w-20 h-10 bg-blue-900 mr-2 mb-2 rounded-lg text-white"
+                  >
+                    Option {index + 1}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div
+          className="bg-white  h-96 sm:w-full md:w-1/2 product-image"
+          style={{ backgroundImage: `url(${optionImge && optionImge})` }}
+        ></div>
+      </div>
     </div>
   );
 }
