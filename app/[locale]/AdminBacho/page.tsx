@@ -238,6 +238,7 @@ export default function Page() {
 
   // console.log("productImages:", productImages);
   // console.log("allProducts: ", allProducts);
+  console.log("productIDValue: ", productIDValue);
 
   useEffect(() => {
     // console.log("All Products: ", allProducts);

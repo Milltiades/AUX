@@ -84,7 +84,7 @@ export default function Page() {
   // console.log("params", params);
   // console.log("oneProduct:", productInfo);
   // console.log("productImage", productImage);
-  console.log("test", productInfo);
+  // console.log("test", productInfo);
 
   const t = useTranslations<any>(params.category);
   const p = useTranslations<any>("Call");
@@ -120,8 +120,8 @@ export default function Page() {
           <h1 className=" text-2xl font-bold">Product options</h1>
           <div className="mt-5 ">
             <ul className="flex">
-              {productInfo &&
-                productInfo.file.map((item: any, index: any) => (
+              {productInfo ? (
+                productInfo?.file?.map((item: any, index: any) => (
                   <li key={item}>
                     <button
                       onClick={() => handleClick(index)}
@@ -130,7 +130,10 @@ export default function Page() {
                       Option {index + 1}
                     </button>
                   </li>
-                ))}
+                ))
+              ) : (
+                <h1>Loading...</h1>
+              )}
             </ul>
           </div>
         </div>

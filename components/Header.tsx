@@ -55,7 +55,7 @@ export default function Header() {
       <div className="flex flex-row justify-between items-center">
         <Link className=" items-center flex justify-center" href="/">
           {/* <Image width={80} height={30} src="/logo.svg" alt={"logo"} /> */}
-          <Image width={90} height={30} src="/Aux-logo.svg" alt={"logo"} />
+          <Image width={90} height={35.19} src="/Aux-logo.svg" alt={"logo"} />
         </Link>
         {!isMenu ? (
           <MenuOutlined
