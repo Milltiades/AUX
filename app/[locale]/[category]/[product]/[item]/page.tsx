@@ -10,7 +10,7 @@ export default function Page() {
 
   const [productInfo, setProductInfo] = useState<any>();
   const [productImage, setProductImage] = useState<string | null>(null);
-  const [optionImge, setOptionImage] = useState<string | null>(null);
+  const [optionImage, setOptionImage] = useState<string | null>(null);
   const [clickedImage, setClickedImage] = useState<any>();
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function Page() {
       const objectUrl = URL.createObjectURL(blob);
 
       setOptionImage(objectUrl); // Assuming you want to update the state with the fetched option image
-      console.log("option image: ", optionImge);
+      console.log("option image: ", optionImage);
     } catch (error) {
       console.error("Error fetching product description image info:", error);
     }
@@ -73,7 +73,7 @@ export default function Page() {
         const objectUrl = URL.createObjectURL(blob);
 
         setOptionImage(objectUrl); // Assuming you want to update the state with the fetched option image
-        console.log("option image: ", optionImge);
+        console.log("option image: ", optionImage);
       } catch (error) {
         console.error("Error fetching product description image info:", error);
       }
@@ -84,7 +84,7 @@ export default function Page() {
   // console.log("params", params);
   // console.log("oneProduct:", productInfo);
   // console.log("productImage", productImage);
-  // console.log("test", productInfo.file);
+  console.log("test", productInfo);
 
   const t = useTranslations<any>(params.category);
   const p = useTranslations<any>("Call");
@@ -120,22 +120,23 @@ export default function Page() {
           <h1 className=" text-2xl font-bold">Product options</h1>
           <div className="mt-5 ">
             <ul className="flex">
-              {productInfo.file.map((item: any, index: any) => (
-                <li key={item}>
-                  <button
-                    onClick={() => handleClick(index)}
-                    className=" w-20 h-10 bg-blue-900 mr-2 mb-2 rounded-lg text-white"
-                  >
-                    Option {index + 1}
-                  </button>
-                </li>
-              ))}
+              {productInfo &&
+                productInfo.file.map((item: any, index: any) => (
+                  <li key={item}>
+                    <button
+                      onClick={() => handleClick(index)}
+                      className=" w-20 h-10 bg-blue-900 mr-2 mb-2 rounded-lg text-white"
+                    >
+                      Option {index + 1}
+                    </button>
+                  </li>
+                ))}
             </ul>
           </div>
         </div>
         <div
-          className="bg-white  h-96 sm:w-full md:w-1/2 product-image"
-          style={{ backgroundImage: `url(${optionImge && optionImge})` }}
+          className="bg-white  h-96 w-full md:w-1/2 product-image"
+          style={{ backgroundImage: `url(${optionImage})` }}
         ></div>
       </div>
     </div>
