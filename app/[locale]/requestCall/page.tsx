@@ -90,7 +90,7 @@ export default function Page() {
           <input
             type="submit"
             value={t("btn")}
-            className="bg-blue-900 text-white font-bold rounded-xl w-40 md:w-56 hover:bg-blue-700 transition duration-300 ease-in-out h-11 self-end text-sm sm:text-lg"
+            className=" cursor-pointer bg-blue-900 text-white font-bold rounded-xl w-40 md:w-56 hover:bg-blue-700 transition duration-300 ease-in-out h-11 self-end text-sm sm:text-lg"
           />
         </form>
       </div>

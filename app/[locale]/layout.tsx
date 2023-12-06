@@ -11,6 +11,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
+import Toast from "@/components/Toast";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -53,6 +54,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <Toast />
           <ToastContainer />
         </NextIntlClientProvider>
       </body>
