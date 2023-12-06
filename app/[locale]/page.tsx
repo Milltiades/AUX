@@ -2,6 +2,7 @@ import Consultation from "@/components/Consultation";
 import Cover from "@/components/Cover";
 import Lang from "@/components/Lang";
 import OurWork from "@/components/OurWork";
+import Toast from "@/components/Toast";
 
 import { Metadata } from "next";
 
@@ -20,6 +21,7 @@ export default function Home() {
 
       <Consultation />
       <OurWork />
+      <Toast />
     </main>
   );
 }

@@ -153,5 +153,8 @@
   "About": {
     "title": "About Us",
     "text": "Technology leads intelligent life. Exclusive representation of AUX commercial air conditioning in Georgia. The AUX Group, operating on the market since 1986, is one of the leading manufacturers of intelligent household appliances, including air conditioners. The group has 7 modern production centres, the largest in Ningbo, Nanchang and Tianjin in China and five R&D centers. AUX devices are available in over 100 countries around the world. AUX has achieved tremendous growth thanks to 27 years of experience in professional refrigeration industry and has become one of the top three brands in the Chinese air conditioning industry. The toal air conditioning sales volume in 2018-2020 is in the first place in the world. Supported by strong R&D capabilities, AUX acts as a leader in various fields such as variable frequency control, comfort and health technology, and intelligent future technology."
+  },
+  "Test": {
+    "message" : "The site is in test mode!"
   }
 }
