@@ -32,7 +32,8 @@
     "name": "Name",
     "email": "Email",
     "mobile": "Mobile",
-    "btn": "Request Call"
+    "btn": "Request Call",
+    "message" : "Message Sent!"
   },
   "VRF1": {
     "Title": "VRF",

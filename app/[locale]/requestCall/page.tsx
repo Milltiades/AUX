@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { toast } from "react-toastify";
 
 type Inputs = {
   name: string;
@@ -27,15 +28,25 @@ export default function Page() {
   const onSubmit = (e: any) => {
     emailjs
       .sendForm(
-        "service_j314zp1",
-        "template_d53bdci",
+        "service_tvtdmoj",
+        "template_q5pgaed",
         form.current,
-        "FAPBz0_Pndyb_160r"
+        "YVt9wFbfL7yJ4TuSu"
       )
       .then(
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          toast(`📧 ${t("message")}`, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
           router.push("/");
           setDone(true);
         },
